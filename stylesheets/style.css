@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'roboto';
+    position: relative;
+}
+.dx{ float: right;}
+
+/*----------------------------*/
+.h100{ height: 100px;}
+
+
+.h600{ height: 600px;}
+
+
+.B{border: 1px solid black;}
+
+.wrapper{
+    padding:0% 10%;
+    background-color: transparent;
+    }
+
+/*-------------------------*/
+
+
+
+
+.mini-menu *,.bar *{
+    display: inline-block;  
+}
+
+.top.bar{
+    color: darkslategray;
+    padding-top:20px ;
+    padding-bottom:20px ;
+    border-bottom: 2px  solid darkblue;
+}
+
+
+.bottom.bar{
+    color: darkslategray;
+    padding-top:20px ;
+    padding-bottom:20px ;
+}
+
+
+
+.mini-menu.sx span{
+    padding-right: 15px;
+}
+.mini-menu.sx span:first-child{
+    border-right: 1px solid gray;
+}
+.mini-menu.dx span,.mini-menu.sx span:nth-child(2),.mini-menu.dx li{
+    margin-left:15px;
+}
+
+
+
+
+button{
+    padding: 5px 10px ;
+    border-radius: 5px;
+    color: tomato;
+    background-color: transparent;
+    border: 1px solid tomato;
+}
+button.red{
+    color: white;
+    border: none;
+    background-color: tomato;
+}
+.big{
+    padding: 20px 25px ;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.text-box{
+    padding-top: 30px;
+    width: 50%;
+    float: left;
+
+}
+
+.container.first{
+    background-image: url(../hubspot-img/jumbotron.png);
+}
+
+.container.azure{
+     background-color: lightskyblue;
+     border-top: 2px  solid darkblue;
+     border-bottom: 2px  solid darkblue;
+
+    }
+
+    .container.second,.third,.top{
+        background-color: aliceblue;
+    }
+
+    
+    .row{
+        position: relative;
+        
+    }
+
+    
+    .col{width: 300px;
+        float: left;
+    }
+
+
+    .row.white{
+        background-color: white;
+    }
+
+   .container.fourth{
+        background-color: darkturquoise;
+    }
+
+    .container.fifth{
+        background-color: white;
+    }

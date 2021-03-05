@@ -3,12 +3,32 @@
     margin: auto;
     box-sizing: border-box;
     font-family: 'roboto';
+    color: darkslategray;
     position: relative;
 }
 .dx{ float: right;}
+.sx{ float: left;}
+
+
 
 /*----------------------------*/
 .h100{ height: 100px;}
+
+
+.img{
+    height: 200px;
+    width: 200px;
+    background-color: violet;
+}
+
+
+.img img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+
 
 
 .h600{ height: 600px;}
@@ -24,6 +44,12 @@
 /*-------------------------*/
 
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 
 .mini-menu *,.bar *{
@@ -31,7 +57,7 @@
 }
 
 .top.bar{
-    color: darkslategray;
+    
     padding-top:20px ;
     padding-bottom:20px ;
     border-bottom: 2px  solid darkblue;
@@ -60,8 +86,13 @@
 
 
 button{
+    font-size: 15px;
     padding: 5px 10px ;
     border-radius: 5px;
+    background-color: transparent;
+    border: transparent;
+}
+button.clear {
     color: tomato;
     background-color: transparent;
     border: 1px solid tomato;
@@ -71,8 +102,8 @@ button.red{
     border: none;
     background-color: tomato;
 }
-.big{
-    padding: 20px 25px ;
+button.big{
+    padding: 20px 35px ;
     font-size: 15px;
 }
 
@@ -80,52 +111,101 @@ button.red{
 
 
 
-
-
-
-
-.text-box{
-    padding-top: 30px;
-    width: 50%;
-    float: left;
-
-}
-
 .container.first{
     background-image: url(../hubspot-img/jumbotron.png);
 }
 
-.container.azure{
-     background-color: lightskyblue;
-     border-top: 2px  solid darkblue;
-     border-bottom: 2px  solid darkblue;
+.first>.text-box{
+    padding-top: 30px;
+    width: 50%;
+    float: left;
+}
 
+
+/*-----*/
+
+
+.row{
+    margin: 30px;
+    position: relative;
+}
+
+.row>.text-box{
+    padding: 30px;
+    text-align: center;
+}
+
+    
+.second>.box>.row>.col {
+    padding: 10px 50px 10px 0px;
+     width: 25%;
+}
+
+    .second>.box>.row>.col.img{
+        width: 200px;
     }
 
-    .container.second,.third,.top{
-        background-color: aliceblue;
+
+    .second>.box>.row> .col.dx{
+        width: 75%;
+        padding:60px 0px;
+    }
+    
+    .text-box span{
+        margin: 10px 10px;
+        display: inline-block;
     }
 
     
-    .row{
-        position: relative;
-        
+    hr{
+        width: 400px;
     }
 
-    
-    .col{width: 300px;
-        float: left;
-    }
+
+
 
 
     .row.white{
         background-color: white;
     }
 
-   .container.fourth{
+  
+    .box{
+        padding:60px;
+        display: block
+    }
+
+    .left{
+        float: left;
+    }
+
+
+
+
+/*--------------*/
+
+
+
+
+
+
+.container.second,.third,.top{
+ 
+    background-color: aliceblue;
+}
+
+
+    .container.fourth{
         background-color: darkturquoise;
     }
 
     .container.fifth{
         background-color: white;
     }
+
+    .container.azure{
+        background-color: lightskyblue;
+        border-top: 2px  solid darkblue;
+        border-bottom: 2px  solid darkblue;
+   
+       }

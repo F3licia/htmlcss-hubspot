@@ -126,8 +126,7 @@ button.big{
 
 
 .row{
-    margin: 30px;
-    position: relative;
+    margin: 30px;;
 }
 
 .row>.text-box{
@@ -136,9 +135,9 @@ button.big{
 }
 
     
-.second>.box>.row>.col {
+.second>.box>.row>.col-sin {
     padding: 10px 50px 10px 0px;
-     width: 25%;
+     width: 200px;
 }
 
     .second>.box>.row>.col.img{
@@ -146,20 +145,51 @@ button.big{
     }
 
 
-    .second>.box>.row> .col.dx{
+    .second>.box>.row> .col-des.dx{
         width: 75%;
         padding:60px 0px;
     }
     
     .text-box span{
-        margin: 10px 10px;
+        margin: 10px 0px;
         display: inline-block;
     }
-
+    
+  .span-text{
+       margin: 0px 30px;
+       font-size: 20px;
+    }
     
     hr{
-        width: 400px;
+        margin: 0 0 0 40px;
+        width: 500px;
     }
+
+    .text-box .check::before{
+        content: '\2713';
+        color: white;
+        background-color: tomato;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        padding: 2px 4px 1px 4px;
+  
+    }
+
+    .text-box .check{
+        margin-right: 70px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

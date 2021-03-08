@@ -20,14 +20,15 @@
 .sx{ float: left;}
 
 
-.text-box>*{
-    margin: 25px 0 ;
+.text-box>*:not(:first-child){
+    font-weight: 500;
+    margin: 10px 0 ;
+    line-height: 30px;
 }
-
 
 .img img{
     max-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -44,26 +45,23 @@
 
 
   
-/*-------------------------*/
+/*--header---------*/
 
 
 .mini-menu *,.bar *{
     display: inline-block;  
 }
 
-.top.bar{
-    
-    padding-top:20px ;
-    padding-bottom:20px ;
-    border-bottom: 2px  solid darkblue;
-}
-
-
-.bottom.bar{
-    color: darkslategray;
-    padding-top:20px ;
-    padding-bottom:20px ;
-}
+    .top.bar{
+        padding-top:20px ;
+        padding-bottom:20px ;
+        border-bottom: 2px  solid darkblue;
+    }
+    .bottom.bar{
+        color: darkslategray;
+        padding-top:20px ;
+        padding-bottom:20px ;
+    }
 
 
 .mini-menu.sx span{
@@ -96,6 +94,7 @@ button.red{
 }
 button.big{
     padding: 20px 35px ;
+    margin-top: 20px;
     font-size: 15px;
 }
 
@@ -105,6 +104,9 @@ button.big{
 
 .container.first{
     background-image: url(../hubspot-img/jumbotron.png);
+    background-color: #fff2ee;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 .first>.text-box{
@@ -115,46 +117,54 @@ button.big{
     float: left;
 }
 
+.first .text-box>*:first-child{
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+
 /*-2----*/
 
-
-
-.second .box .row .img{
-    height: 250px;
-    width: 250px;
-}
-
-.second .box .col-sin .img{
-    height: 150px;
-    width: 150px;
-}
-
-.second .box .col-sin .img>.text-box{
-    height: 10px;
-}
-
-.second .row:nth-child(2){
-    background-color: white;
-}
-
 .second .row{
-   padding: 0 90px;
-   
-}
+    padding: 30px 90px;
+ }
+ 
 
+ .second  .img+.text-box h2{
+     font-size: 35px;
+ }
 
-.second .row>.text-box{
+ .second .row>.text-box{
     padding: 30px;
     text-align: center;
 }
 
-.second>.box>.row>.col-sin {
-    padding:60px 0px;
-     width: 200px;
+ .second .row:nth-child(2){
+    border-radius: 10px;
+    background-color: white;
 }
 
+ .second .box .row .img{
+    height: 200px;
+    width: 250px;
+}
 
-   .col-sin>.img{
+    .second .box .col-sin .img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .second .box .col-sin .img>.text-box{
+        height: 10px;
+    }
+
+    .second>.box>.row>.col-sin {
+        padding:60px 0px;
+        width: 200px;
+    }
+
+
+   .second .col-sin>.img{
         width: 150px;
     }
 
@@ -164,16 +174,9 @@ button.big{
     }
     
     .text-box span{
-        margin: 10px 0px;
+        font-weight: 900;
         display: inline-block;
-    }
-    
-  .span-text{
-      font-weight: 700;
-       margin: 0px 30px;
-       font-size: 20px;
-       
-    }
+    }  
     
     hr{
         margin-left:40px;
@@ -191,56 +194,52 @@ button.big{
         border-radius: 50%;
         padding: 2px 4px;
         vertical-align: top;
-  
     }
+        .second span.check{
+            margin-right: 70px;
+        }
 
-    span.check{
-        font-weight: 500;
-        margin-right: 70px;
-    }
 
   /*-3----*/
 
 
+ .third .text-box>*:first-child{
+    margin: 30px 0px;
+}
     
-  .third .col3 .img{
-        height: 150px;
-        width: 150px;
-    }
-
-    .col3{
-        padding: 40px 40px;
-        width: 32%;
-        height:100%;
-        background-color: white;
-    }
-    
-    
-    .col3:nth-of-type(3){
-        margin: 0 0 0 20px;
-    }
-
-    .col3:first-of-type{
-    margin: 0 20px 0 0px;
+ .third .col3 .img{
+     height: 100px;
+     width: 100px;
 }
 
+ .third .col3{
+     padding: 40px 40px;
+     width: 32%;
+     height:100%;
+     border-radius: 10px;
+     background-color: white;
+ }
+    .third .col3:nth-of-type(3){
+            margin: 0 0 0 20px;
+        }
 
-    .col3 .text-box{
+    .third .col3:first-of-type{
+        margin: 0 20px 0 0px;
+    }
+
+
+    .third .col3 .text-box{
         text-align: center;
-        margin: 50px 0;
+        margin-bottom: 30px;
     }
 
-    .col3>.text-box:nth-of-type(2){
-        padding:30px 0px;
+    .col3>.text-box:nth-of-type(2){    
         border-bottom: 1px solid gray;
-    }
-    .col3>.text-box:nth-of-type(2)>h4{
-        margin: 0 10px;
-       line-height: 30px;
     }
 
     .col3>.text-box:nth-of-type(3)>h4{
         text-align: left;
+        line-height: 20px;
         margin: 0px;
     }
 
@@ -248,7 +247,11 @@ button.big{
 
 /*-4--*/
 
-    
+.fourth .text-box>*:first-child{
+    margin: 30px;
+    font-size: 35px;
+}
+
     .container.fourth .row .text-box,.table {
         color: white;
         text-align: center;
@@ -256,6 +259,8 @@ button.big{
     }   
 
         .table{
+            padding-top: 50px;
+            padding-bottom: 50px;
             width: 1000px;
             text-align: center;
         }
@@ -298,17 +303,37 @@ button.big{
             }
 
       /*-5--*/
-
-
-     .fifth .box:last-child{
-        margin: 100px 5px;
+      
+    
+    .fifth .text-box{
+       width: 500px;
+       height: auto;
     }
-        
+
      .fifth .text-box:first-of-type{
-        margin-left:60px;             
+        padding: 60px 60px 0 60px; 
     }
 
-     .grid{ height: 100px; width: 650px;}
+    .fifth .text-box:nth-child(2),.fifth .img{
+        margin-top: 60px;
+    }
+
+    .fifth .text-box:first-of-type>h2{
+        font-weight: 900;
+        font-size: 50px;
+    }
+    .fifth .text-box:nth-child(2)>h2{
+        font-size: 40px;
+    }
+    .fifth .img {
+        margin-top: 20px;
+        max-width: 350px ;
+    }
+
+     .grid{ height: 100px;
+            width: 650px;
+            margin: 40px 0
+            }
         
      .grid-block img{ max-height: 100% ; max-width: 100px;}
         
@@ -319,28 +344,25 @@ button.big{
         width: 25%;
      }
 
-    .fifth .img img{
-        max-width: 350px ;
-    }
+   
 
-        /*-footer--*/
+ /*-footer--*/
+
 
      .footer .col{
-         margin: 30px 0;
+        margin: 30px 0;
         width: 25%;
     }
             
     .footer .col h4:first-child{
          font-weight: 900;
     }
-                
-            
+                        
     .footer .box h4,.footer ul li,.footer span{
         font-weight: 400;
         color: #dadee0;
         margin: 20px 0;
     }
-
 
     .footer .box:nth-child(2){
         border-bottom: 2px solid #dadee0;

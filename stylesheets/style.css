@@ -43,9 +43,14 @@
     display: table;
 }
 
-
-  
 /*--header---------*/
+
+
+.arrow::after{
+content:'\02C5';
+font-weight: 900;
+margin-left: 5px ;
+}
 
 
 .mini-menu *,.bar *{
@@ -55,7 +60,7 @@
     .top.bar{
         padding-top:20px ;
         padding-bottom:20px ;
-        border-bottom: 2px  solid darkblue;
+        border-bottom: 1px  solid #32495b;
     }
     .bottom.bar{
         color: darkslategray;
@@ -390,11 +395,19 @@ button.big{
         padding-left: 70px;
         font-weight: 500;
    }
+        .mini{
+            height: 100%;
+            width: 100%;
+            display: inline;
+            margin-left: -15px;
+        }
+            .mini img{
+            padding: 20px 15px 0 15px;
+            width: 50px;
+            max-height: 100%;
+            color: white;
+        }
 
-
-
-
-   
 
    .second,.third,.top{
       background-color: aliceblue;
@@ -418,9 +431,3 @@ button.big{
   .footer{
       background-color: #32495b;
   }
-
-
-
-
-
-

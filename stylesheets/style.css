@@ -7,12 +7,12 @@
 }
 
 .container:not(.fourth){
-  color: darkslategray;
+  color: #32495b;
 }
 
 /*wrapper*/
-.container,.bar{
-    padding:1% 10%;
+.container,.bar,.footer{
+    padding:1% 10% 2% 10%;
     background-color: transparent;
     }
 
@@ -20,11 +20,9 @@
 .sx{ float: left;}
 
 
-
 .text-box>*{
     margin: 25px 0 ;
 }
-
 
 
 .img img{
@@ -33,26 +31,10 @@
     object-fit: contain;
 }
 
-
-.center-button{
+.center{
    text-align: center;
    margin: auto;
 }
-
-
-
-
-.h600{ height: 600px;}
-
-
-.B{border: 1px solid black;}
-
-
-
-
-
-/*-------------------------*/
-
 
 .clearfix::after{
     content: "";
@@ -60,6 +42,9 @@
     display: table;
 }
 
+
+  
+/*-------------------------*/
 
 
 .mini-menu *,.bar *{
@@ -81,7 +66,6 @@
 }
 
 
-
 .mini-menu.sx span{
     padding-right: 15px;
 }
@@ -91,8 +75,6 @@
 .mini-menu.dx span,.mini-menu.sx span:nth-child(2),.mini-menu.dx li{
     margin-left:15px;
 }
-
-
 
 
 button{
@@ -133,8 +115,6 @@ button.big{
     float: left;
 }
 
-
-
 /*-2----*/
 
 
@@ -153,14 +133,9 @@ button.big{
     height: 10px;
 }
 
-
-
-
-
 .second .row:nth-child(2){
     background-color: white;
 }
-
 
 .second .row{
    padding: 0 90px;
@@ -171,8 +146,6 @@ button.big{
 .second .row>.text-box{
     padding: 30px;
     text-align: center;
-
-
 }
 
 .second>.box>.row>.col-sin {
@@ -226,21 +199,17 @@ button.big{
         margin-right: 70px;
     }
 
-
-
   /*-3----*/
 
 
     
   .third .col3 .img{
-    height: 150px;
-    width: 150px;
-    background-color: azure;
-}
-
+        height: 150px;
+        width: 150px;
+    }
 
     .col3{
-        padding: 40px 5px;
+        padding: 40px 40px;
         width: 32%;
         height:100%;
         background-color: white;
@@ -256,20 +225,23 @@ button.big{
 }
 
 
-    .col3>.text-box{
+    .col3 .text-box{
         text-align: center;
-    
+        margin: 50px 0;
     }
 
     .col3>.text-box:nth-of-type(2){
         padding:30px 0px;
         border-bottom: 1px solid gray;
     }
+    .col3>.text-box:nth-of-type(2)>h4{
+        margin: 0 10px;
+       line-height: 30px;
+    }
 
     .col3>.text-box:nth-of-type(3)>h4{
         text-align: left;
-        margin: 5px 0;
-
+        margin: 0px;
     }
 
 
@@ -277,135 +249,156 @@ button.big{
 /*-4--*/
 
     
- .container.fourth .row .text-box,.table {
+    .container.fourth .row .text-box,.table {
         color: white;
         text-align: center;
 
- }   
+    }   
+
+        .table{
+            width: 1000px;
+            text-align: center;
+        }
+
+        .table h2{
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        .table h2:after {
+            content: ' \002B';
+            font-size: 30px;
+            vertical-align: center;
+        }
+
+            .tiny-block{
+                width: 250px;
+                height: 200px;
+                padding: 10px;
+
+                border-bottom: 1px solid white;
+                border-right:  1px solid white;
+            
+            }
+            .table div:nth-child(4),:last-child {
+                border-right: none;
+            }
+            .table div:nth-child(4) ~ div {
+                border-bottom: none;
+            }
+
+            .img-top{
+                margin-top: 10px;
+                width: 100%;
+                height: 50px;
+            }
+
+            .img-top img{
+            max-width: 100%;
+            }
+
+      /*-5--*/
 
 
-                                    /*tabella e stili tabella*/
-
-.table{
-    width: 1000px;
-    text-align: center;
-
-}
- .table h2{
-     font-size: 50px;
-     margin: 10px;
-}
-
- .table h2:after {
-    content: ' \002B';
-    font-size: 30px;
-    vertical-align: center;
-}
-
-    .tiny-block{
-        width: 250px;
-        height: 200px;
-        padding: 10px;
-
-        border-bottom: 1px solid white;
-        border-right:  1px solid white;
-    
+     .fifth .box:last-child{
+        margin: 100px 5px;
     }
-    .table div:nth-child(4),:last-child {
-        border-right: none;
-    }
-    .table div:nth-child(4) ~ div {
-        border-bottom: none;
+        
+     .fifth .text-box:first-of-type{
+        margin-left:60px;             
     }
 
-    .img-top{
-        margin-top: 10px;
-        width: 100%;
+     .grid{ height: 100px; width: 650px;}
+        
+     .grid-block img{ max-height: 100% ; max-width: 100px;}
+        
+     .grid-block:not(:nth-child(7)){ padding: 10px;}
+
+    .grid-block{
         height: 50px;
+        width: 25%;
+     }
+
+    .fifth .img img{
+        max-width: 350px ;
     }
 
-    .img-top img{
-       max-width: 100%;
+        /*-footer--*/
+
+     .footer .col{
+         margin: 30px 0;
+        width: 25%;
+    }
+            
+    .footer .col h4:first-child{
+         font-weight: 900;
+    }
+                
+            
+    .footer .box h4,.footer ul li,.footer span{
+        font-weight: 400;
+        color: #dadee0;
+        margin: 20px 0;
     }
 
 
+    .footer .box:nth-child(2){
+        border-bottom: 2px solid #dadee0;
+    }
+        
+    .footer .button{
+        font-weight: 500;
+        color: #32495b;
+        background-color: #dadee0;
+        padding: 10px 10px;
+     }
 
- /*-5--*/
+    .footer ul li{
+        margin: 30px 10px;
+        display: inline-block;
+    }
 
+    .tiny-footer{
+        margin-top: 50px;
+        font-weight: 500;
+    }
 
-
-  .fifth .box:last-child{
-   margin: 100px 5px;
-}
- 
- .fifth .text-box:first-of-type{
-     margin-left:60px;             
- }
-
- .grid{ height: 100px; width: 650px;}
- 
- .grid-block img{ max-height: 100% ; max-width: 100px;}
- 
- .grid-block:not(:nth-child(7)){ padding: 10px;}
-
- .grid-block{
-    height: 50px;
-    width: 25%;
-}
-
-.fifth .img img{
-max-width: 350px ;
-}
-
+    .tiny-footer>h4{
+        display: inline;
+        padding-left: 70px;
+        font-weight: 500;
+   }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container.second,.third,.top{
- 
-    background-color: aliceblue;
-}
-
-.container.fourth{
-    background-color: darkturquoise;
-}
-
-
-.footer{
-    background-color: #32495b;
-}
-
-
-
-
-
- .container.fifth{
-   background-color: white;
-}
-
-.container.azure{
-        background-color: lightskyblue;
-        border-top: 2px  solid #32495b;;
-        border-bottom: 2px  solid #32495b;
    
-}
+
+   .second,.third,.top{
+      background-color: aliceblue;
+    }
+  
+  .container.fourth{
+      background-color: darkturquoise;
+    }
+
+  .container.fifth{
+      background-color: white;
+    }
+ 
+ .container.azure{
+     height: 100px;
+     background-color: #afebe4;
+     border-top: 3px  solid #32495b;
+     border-bottom: 3px  solid #32495b;
+    }
+
+  .footer{
+      background-color: #32495b;
+  }
+
+
+
+
+
+

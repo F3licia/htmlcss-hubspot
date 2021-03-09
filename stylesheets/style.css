@@ -12,9 +12,15 @@
 
 /*wrapper*/
 .container,.bar,.footer{
-    padding:1% 10% 2% 10%;
-    background-color: transparent;
-    }
+   margin-left:auto;
+   margin-right:auto;
+
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+   width: 1200px;
+   min-width: 1000px;
+}
 
 .dx{ float: right;}
 .sx{ float: left;}
@@ -60,7 +66,6 @@ margin-left: 5px ;
     .top.bar{
         padding-top:20px ;
         padding-bottom:20px ;
-        border-bottom: 1px  solid #32495b;
         line-height: normal;
     }
     .bottom.bar{
@@ -113,7 +118,7 @@ button.big{
  /*-1----*/
 
 
-.container.first{
+ .ill-bkgd{
     background-image: url(../hubspot-img/jumbotron.png);
     background-color: #fff2ee;
     background-repeat: no-repeat;
@@ -280,7 +285,7 @@ button.big{
 
         .table h2{
             font-size: 50px;
-            margin: 10px;
+            margin: 10px;            
         }
 
         .table h2:after {
@@ -317,29 +322,24 @@ button.big{
 
       /*-5--*/
       
-    
-    .fifth .text-box{
-       width: 500px;
-       height: auto;
+      
+    .fifth .top-row{
+         padding: 0 40px 20px 90px; 
     }
 
-     .fifth .text-box:first-of-type{
-        padding: 20px 60px 0 60px; 
-    }
+    .fifth .bottom-row .text-box{ max-width: 40%;}
 
-    .fifth .text-box:nth-child(2),.fifth .img{
-        margin-top: 60px;
-    }
 
-    .fifth .text-box:first-of-type>h2{
+    .fifth .top-row .text-box h2:first-of-type{
         font-weight: 900;
         font-size: 50px;
     }
-    .fifth .text-box:nth-child(2)>h2{
+    .fifth .bottom-row .text-box h2:first-of-type{
+        font-weight: 900;
         font-size: 40px;
     }
+
     .fifth .img {
-        margin-top: 20px;
         max-width: 350px ;
     }
 
@@ -417,11 +417,18 @@ button.big{
         }
 
 
-   .second,.third,.top{
+
+       
+   
+    .aliceblue-bkgd:first-of-type{
+        border-bottom: 1px  solid #32495b;
+    }
+
+   .aliceblue-bkgd{
       background-color: aliceblue;
     }
   
-  .container.fourth{
+  .turquoise-bkgd{
       background-color: darkturquoise;
     }
 
@@ -429,13 +436,13 @@ button.big{
       background-color: white;
     }
  
- .container.azure{
+ .azure{
      height: 100px;
      background-color: #afebe4;
      border-top: 3px  solid #32495b;
      border-bottom: 3px  solid #32495b;
     }
 
-  .footer{
+  .dark-bkgd{
       background-color: #32495b;
   }
